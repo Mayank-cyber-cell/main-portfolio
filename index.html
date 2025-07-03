@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f2937" />
+    <title>Mayank Kumar Shah - Portfolio</title>
+    <meta name="description" content="Portfolio of Mayank Kumar Shah - 1st-year B.Tech CSE student passionate about coding, AI, and creating innovative solutions." />
+    <meta name="keywords" content="Mayank Kumar Shah, Portfolio, Web Developer, B.Tech CSE, Python, JavaScript, HTML, CSS" />
+    <meta name="author" content="Mayank Kumar Shah" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mayankshah.dev/" />
+    <meta property="og:title" content="Mayank Kumar Shah - Portfolio" />
+    <meta property="og:description" content="1st-year B.Tech CSE student passionate about coding, AI, and creating innovative solutions." />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mayankshah.dev/" />
+    <meta property="twitter:title" content="Mayank Kumar Shah - Portfolio" />
+    <meta property="twitter:description" content="1st-year B.Tech CSE student passionate about coding, AI, and creating innovative solutions." />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Prevent flash of unstyled content */
+      .theme-loading {
+        visibility: hidden;
+      }
+      
+      /* Dark mode styles for immediate application */
+      .dark {
+        color-scheme: dark;
+      }
+      
+      .light {
+        color-scheme: light;
+      }
+    </style>
+    
+    <script>
+      // Apply theme immediately to prevent flash
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        
+        document.documentElement.classList.add(theme);
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', 
+          theme === 'dark' ? '#1f2937' : '#ffffff'
+        );
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-hlgfub9Y.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CEypO2sA.css">
+  </head>
+  <body class="theme-loading">
+    <div id="root"></div>
+    <script>
+      // Remove loading class after DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.remove('theme-loading');
+      });
+    </script>
+  </body>
+</html>
